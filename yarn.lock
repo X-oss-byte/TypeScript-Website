@@ -176,15 +176,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:^4.17.17":
-  version: 4.17.18
-  resolution: "@types/express@npm:4.17.18"
+"@types/express@npm:^4.17.23":
+  version: 4.17.24
+  resolution: "@types/express@npm:4.17.24"
   dependencies:
     "@types/body-parser": "*"
     "@types/express-serve-static-core": ^4.17.33
     "@types/qs": "*"
     "@types/serve-static": "*"
-  checksum: 8c178da4f0edff1f006d871fbdc3f849620986ff10bad252f3dfd45b57554e26aaa28c602285df028930d5216e257a06fbaf795070f8bb42f7d87e3b689cba50
+  checksum: d4fc77260e7f06d5822bbdb528efbf98d00e8f3c8d278c10de5c38f86026411e3911f32aea74b957096d66d9ac5a31f4c7c3748a72802267901043002754ee4a
   languageName: node
   linkType: hard
 
@@ -5624,7 +5624,7 @@ resolve@^1.10.0:
   resolution: "root@workspace:."
   dependencies:
     "@oss-docs/sync": ^1.1.4
-    "@types/express": ^4.17.17
+    "@types/express": ^4.17.23
     concurrently: ^5.1.0
     cross-env: ^7.0.2
     danger: ^9.2.10
