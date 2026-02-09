@@ -153,17 +153,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express-serve-static-core@npm:*":
-  version: 4.17.7
-  resolution: "@types/express-serve-static-core@npm:4.17.7"
-  dependencies:
-    "@types/node": "*"
-    "@types/qs": "*"
-    "@types/range-parser": "*"
-  checksum: 1e0386e915075c10f42b76b4caaf37fef0a6184636c2fa083f99023c4847cfefbf745eaf239a01bbe23a6e004dfbd54d1f1315e8ae42da3bcb9d7e08e87d5bc3
-  languageName: node
-  linkType: hard
-
 "@types/express-serve-static-core@npm:^4.17.33":
   version: 4.17.37
   resolution: "@types/express-serve-static-core@npm:4.17.37"
@@ -176,22 +165,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:^4.17.17":
-  version: 4.17.18
-  resolution: "@types/express@npm:4.17.18"
+"@types/express@npm:^4.17.25":
+  version: 4.17.25
+  resolution: "@types/express@npm:4.17.25"
   dependencies:
     "@types/body-parser": "*"
     "@types/express-serve-static-core": ^4.17.33
     "@types/qs": "*"
-    "@types/serve-static": "*"
-  checksum: 8c178da4f0edff1f006d871fbdc3f849620986ff10bad252f3dfd45b57554e26aaa28c602285df028930d5216e257a06fbaf795070f8bb42f7d87e3b689cba50
+    "@types/serve-static": ^1
+  checksum: 285d16008489d37b2be03e2e050bcf201d5d6ed9278ca13619d9029efd2055b192b2445f769116f716cfcf53d9d799a03f4e76199af9cea0ea3dee3d88595931
   languageName: node
   linkType: hard
 
-"@types/mime@npm:*":
-  version: 2.0.2
-  resolution: "@types/mime@npm:2.0.2"
-  checksum: 3c29a6ed0e51b3ea88b0393a9bc081d06396f38c5e9925297b047e27eaef8ed6c8a00deb21d3b9cbb8f76b806c36aab98cd0fe51e34f1509ecaa02a4f147c7a5
+"@types/http-errors@npm:*":
+  version: 2.0.5
+  resolution: "@types/http-errors@npm:2.0.5"
+  checksum: a88da669366bc483e8f3b3eb3d34ada5f8d13eeeef851b1204d77e2ba6fc42aba4566d877cca5c095204a3f4349b87fe397e3e21288837bdd945dd514120755b
   languageName: node
   linkType: hard
 
@@ -240,13 +229,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/serve-static@npm:*":
-  version: 1.13.4
-  resolution: "@types/serve-static@npm:1.13.4"
+"@types/send@npm:<1":
+  version: 0.17.6
+  resolution: "@types/send@npm:0.17.6"
   dependencies:
-    "@types/express-serve-static-core": "*"
-    "@types/mime": "*"
-  checksum: 04bff9b1e75d5fad8afb8117984b703fd82275c5e12b1320cdc1c4e19eb8c38a5c2d9fdf07a87f424c93645c83581d00996f45abf07b7d19ff7234224e67e514
+    "@types/mime": ^1
+    "@types/node": "*"
+  checksum: 5bd287f1357380963eb4b12daef5c8982f52a3269308ff3414304074d4ad7f05fe466f2cb476f54798096877ad3c5343692978776bd674b25261ecbeab87640f
+  languageName: node
+  linkType: hard
+
+"@types/serve-static@npm:^1":
+  version: 1.15.10
+  resolution: "@types/serve-static@npm:1.15.10"
+  dependencies:
+    "@types/http-errors": "*"
+    "@types/node": "*"
+    "@types/send": <1
+  checksum: f216eef2aaf2c8eff09f431c420c5c2989eaf0dfc15d106db9fb64c14577a4059af24fb0ae2eba7984d6360950c8cbc1fb52f65608106477729d251481bc96fe
   languageName: node
   linkType: hard
 
@@ -5624,7 +5624,7 @@ resolve@^1.10.0:
   resolution: "root@workspace:."
   dependencies:
     "@oss-docs/sync": ^1.1.4
-    "@types/express": ^4.17.17
+    "@types/express": ^4.17.25
     concurrently: ^5.1.0
     cross-env: ^7.0.2
     danger: ^9.2.10
